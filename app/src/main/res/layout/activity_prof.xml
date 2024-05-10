@@ -45,7 +45,9 @@
                 android:layout_height="100dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:src="@drawable/user_icon"></ImageView>
+                android:src="@drawable/user_icon">
+
+            </ImageView>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -55,14 +57,18 @@
                 android:text="User"
                 android:textColor="@color/black"
                 android:textSize="22sp"
-                android:textStyle="bold"></TextView>
+                android:textStyle="bold">
+
+            </TextView>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="+213 YXX XX XX XX"
-                android:textSize="12sp"></TextView>
+                android:textSize="12sp">
+
+            </TextView>
 
             <androidx.appcompat.widget.AppCompatButton
                 android:layout_width="wrap_content"
@@ -90,47 +96,13 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <ImageView
-                        android:id="@+id/nightModeIcon"
-                        android:layout_width="40dp"
-                        android:layout_height="40dp"
-                        android:background="@drawable/round_back_icon"
-                        android:padding="12dp"
-                        android:src="@drawable/night_icon">
-
-                    </ImageView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_marginStart="20dp"
-                        android:layout_toEndOf="@id/nightModeIcon"
-                        android:text="Night Mode"
-                        android:textColor="@color/white"
-                        android:textStyle="bold">
-
-                    </TextView>
-
-                    <androidx.appcompat.widget.SwitchCompat
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_alignParentEnd="true"
-                        android:layout_centerVertical="true"
-                        android:switchMinWidth="50dp"
-                        android:theme="@style/nightModeSwitch"
-                        tools:ignore="TouchTargetSizeCheck">
-
-                    </androidx.appcompat.widget.SwitchCompat>
-
-                </RelativeLayout>
+                    android:layout_height="wrap_content"
+                    />
 
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp">
+                    >
 
                     <ImageView
                         android:id="@+id/notificationIcon"
@@ -138,13 +110,14 @@
                         android:layout_height="40dp"
                         android:background="@drawable/round_back_icon"
                         android:padding="12dp"
-                        android:src="@drawable/eata">
+                        android:src="@drawable/oreddd">
 
                     </ImageView>
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+
                         android:layout_centerVertical="true"
                         android:layout_marginStart="20dp"
                         android:layout_toEndOf="@id/notificationIcon"
@@ -210,7 +183,7 @@
                         android:layout_height="40dp"
                         android:background="@drawable/round_back_icon"
                         android:padding="12dp"
-                        android:src="@drawable/lang_icon">
+                        android:src="@drawable/setting">
 
                     </ImageView>
 
@@ -220,7 +193,7 @@
                         android:layout_centerVertical="true"
                         android:layout_marginStart="20dp"
                         android:layout_toEndOf="@id/langIcon"
-                        android:text="Languages"
+                        android:text="Settings"
                         android:textColor="@color/white"
                         android:textStyle="bold">
 

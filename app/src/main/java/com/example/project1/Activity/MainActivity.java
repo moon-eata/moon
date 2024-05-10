@@ -9,6 +9,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
 import android.widget.Button;
+import android.widget.ImageButton;
 
 import com.example.project1.Adapter.PopularAdapter;
 import com.example.project1.R;
@@ -16,6 +17,7 @@ import com.example.project1.databinding.ActivityMainBinding;
 import com.example.project1.domain.PopularDomain;
 import com.example.project1.mercedes.merce;
 import com.example.project1.morePage;
+import com.example.project1.notification;
 import com.example.project1.peugeot;
 import com.example.project1.renault;
 
@@ -29,6 +31,8 @@ Button mercedes;
 
 Button Renault;
 Button peugeot;
+
+ImageButton notif;
 
 
     @Override
@@ -50,6 +54,8 @@ Button peugeot;
         mercedes=(Button) findViewById(R.id.mercedes);
         Renault=(Button) findViewById(R.id.Renault);
         peugeot=(Button) findViewById(R.id.peugeot);
+        notif=(ImageButton) findViewById(R.id.notif);
+
     }
 
     private void statusBarColor() {
@@ -100,5 +106,8 @@ Button peugeot;
         Intent peugeot= new Intent(this,peugeot.class);
         startActivity(peugeot);
     }
-
+    public void onclick5 (View view){
+        Intent notification= new Intent(this, notification.class);
+        startActivity(notification);
+    }
 }
